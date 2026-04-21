@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div style="width: 600px; border: 1px solid black;display: flex; flex-direction: column; gap: 0px; padding: 5px;">
+        <div style="display: flex;">
+            <div style="width: 23%; display: flex; flex-direction: column; gap:5px; padding: 2px;">
+                <label style="border: 1px solid black; padding: 1px;" for="name">Name</label>
+                <label style="border: 1px solid black; padding: 1px;" for="email">Email</label>
+                <label style="border: 1px solid black; padding: 1px;" for="mobile">Mobile Number</label>
+                <label style="border: 1px solid black; padding: 1px;" for="arrival">Arrival Date</label>
+                <label style="border: 1px solid black; padding: 1px;" for="room">Room Types</label>
+                <label style="border: 1px solid black; padding: 1px;" for="preferences">Preferences</label>
+                <label style="border: 1px solid black; padding: 1px;" for="payment">Mode of Payment</label>
+            </div>
+            <div style="width: 74%; display: flex; flex-direction: column; gap:5px; padding: 2px;" >
+                <div style="width:100%; border: 1px solid black; height: 20px; padding-right: 5px;">
+                    <input style="width: 50%;" type="text" id='name' placeholder="Enter Name:">
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px; padding-right: 5px;">
+                    <input style="width: 50%;" type="email" id='email' placeholder="Enter Email:">
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px; padding-right: 5px;">
+                    <input style="width: 50%;" type="tel" id='mobile' placeholder="Enter Mobile Number:">
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px;padding-right: 5px;">
+                    <input style="width: 50%;" type="date" id='arrival'>
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px;padding-right: 5px;">
+                    <input type="radio" id="single" name="room-type" value="single">
+                    <label for="single">Single</label>
+                    <input type="radio" id="double" name="room-type" value="double">
+                    <label for="double">Double</label>
+                    <input type="radio" id="suite" name="room-type" value="suite">
+                    <label for="suite">Presidential Suite</label>
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px;display: flex; gap: 5px; align-items: center;padding-left: 5px;padding-right: 5px;">
+                    <input type="checkbox" id="smoking" name="preferences" value="non-smoking">
+                    <label for="smoking">Non Smoking</label>
+                    <input type="checkbox" id="internet" name="preferences" value="internet">
+                    <label for="internet">Internet</label>
+                    <input type="checkbox" id="firm-mattress" name="preferences" value="firm-mattress">
+                    <label for="firm-mattress">Firm Mattress</label>
+                </div>
+                <div style="width:100%; border: 1px solid black; height: 20px; display: flex; gap: 5px; align-items: center; padding-left: 5px; padding-right: 5px;">
+                    <select name="payment" id="payment" style="width: 50%;">
+                        <option value="credit-card">Credit Card</option>
+                        <option value="debit-card">Debit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="cash">Cash</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 3px; border: 1px solid black;text-align: center;padding: 2px;">
+            <button type="button">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
